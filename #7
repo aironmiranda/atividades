@@ -1,0 +1,23 @@
+Algoritmo "7"
+Var
+   x, maior, menor: inteiro
+   num: vetor [1..30] de inteiro
+
+Inicio
+   para x de 1 ate 30 faca
+      leia (num[x])
+
+      se (x = 1) entao
+         maior <- num[x]
+         menor <- num[x]
+      fimse
+      se (num[x] > maior) entao
+         maior <- num[x]
+      senao
+         se (num[x] < menor) entao
+            menor <- num[x]
+         fimse
+      fimse
+   fimpara
+   escreva ("O maior numero eh ", maior, " e o menor numero eh ", menor)
+Fimalgoritmo
