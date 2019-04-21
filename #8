@@ -1,0 +1,37 @@
+Algoritmo "8"
+Var
+   media, soma, maiorm, maiorf, aux, cont: real
+   sex: vetor [1..7] de caracter
+   id: vetor [1..7] de real
+   x: inteiro
+Inicio
+   para x de 1 ate 7 faca
+      escreva ("Digite o sexo [M/F]: ")
+      leia (sex[x])
+      escreva ("Digite sua idade: ")
+      leia (id[x])
+
+      se (sex[x] = "M") ou (sex[x] = "m") entao
+         soma <- id[x] + soma
+         aux <- id[x]
+         cont <- cont + 1
+         se (aux > maiorm) entao
+            maiorm <- id[x]
+         fimse
+      senao
+         se (sex[x] = "F") ou (sex[x] = "f") entao
+            soma <- id[x] + soma
+            aux <- id[x]
+            cont <- cont + 1
+            se (aux > maiorf) entao
+               maiorf <- id[x]
+            fimse
+         fimse
+      fimse
+   fimpara
+   media <- soma/cont
+   escreval ("A media de idades sao: ", media)
+   escreval ("A maior idade masculina eh: ", maiorm)
+   escreval ("A maior idade feminina eh: ", maiorf)
+Fimalgoritmo
+
