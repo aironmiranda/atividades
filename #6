@@ -1,0 +1,17 @@
+Algoritmo "6"
+Var
+   num, x, cont: inteiro
+Inicio
+   leia (num)
+
+   para x de 1 ate num faca
+      se (num %x = 0) entao
+         cont <- cont + 1
+      fimse
+   fimpara
+   se (cont = 2) entao
+      escreva (num, " eh numero primo")
+   senao
+      escreva (num, " nao eh numero primo")
+   fimse
+Fimalgoritmo
