@@ -1,0 +1,21 @@
+Algoritmo "3"
+Var
+   num: inteiro
+Inicio
+   leia (num)
+   se (num %3 = 0) e (num % 7 = 0) entao
+      escreva (num, " é divisivel por 3 e por 7")
+   senao
+      se (num %3 = 0) ou (num % 7 = 0) entao
+         se (num % 3 = 0) entao
+            escreva (num, " é divisivel por 3")
+         fimse
+         se (num % 7 = 0) entao
+            escreva (num, " é divisivel por 7")
+         fimse
+      fimse
+   fimse
+   se (num %3 <> 0) e (num % 7 <> 0) entao
+      escreva (num, " não é divisivel nem por 3 nem por 7")
+   fimse
+Fimalgoritmo
