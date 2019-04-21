@@ -1,0 +1,29 @@
+Algoritmo "2"
+Var
+   peso: vetor [1..5] de inteiro
+   x, soma, maior, menor: inteiro
+   media: real
+Inicio
+   soma <- 0
+
+   para x de 1 ate 5 faca
+      leia (peso[x])
+      soma <- soma + peso[x]
+
+      se (x = 1) entao
+         maior <- peso[x]
+         menor <- peso[x]
+      senao
+         se (peso[x]>maior) entao
+            maior<-peso[x]
+         fimse
+         se (peso[x]<menor) entao
+            menor<-peso[x]
+         fimse
+      fimse
+   fimpara
+   media<-soma/5
+   escr
+   escr
+   escr
+Fimalgoritmo
