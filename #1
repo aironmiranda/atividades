@@ -1,0 +1,25 @@
+Algoritmo "1"
+Var
+   A, B, C: inteiro
+Inicio
+   escreva ("digite o valor do lado A: ")
+   leia (A)
+   escreva ("digite o valor do lado B: ")
+   leia (b)
+   escreva ("digite o valor do lado C: ")
+   leia (c)
+
+   se (A < B + C) e (B < A + B) e (C < A + B) então
+      se  (A = B) e (B = C) entao
+         escreva ("triangulo equilátero")
+      senao
+         se (A <> B) e (A <> C) e (B <> C) então
+            escreva ("triangulo escaleno")
+         senao
+            escreva ("Triangulo isoceles")
+         fimse
+      fimse
+   senao
+      escreva ("Triangulo inesistente")
+   fimse
+Fimalgoritmo
