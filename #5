@@ -1,0 +1,19 @@
+Algoritmo "5"
+Var
+   x: inteiro
+   salb: vetor [1..5] de real
+   sall: vetor [1..5] de real
+Inicio
+   para x de 1 ate 5 faca
+      leia (salb[x])
+
+      se (salb[x] < 1500) entao
+         sall[x] <- salb[x] - (salb[x] * 0.08)
+      senao
+         sall[x] <- salb[x] - ((salb[x] * 0.05) + (salb[x] * 0.11))
+      fimse
+   fimpara
+   para x de 1 ate 5 faca
+      escreval ("O salario bruto: ", salb[x], " R$ fica em salario liquido: ", sall[x], " R$")
+   fimpara
+Fimalgoritmo
